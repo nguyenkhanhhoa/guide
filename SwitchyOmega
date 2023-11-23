@@ -1,7 +1,9 @@
 https://chromewebstore.google.com/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif
 https://github.com/FelisCatus/SwitchyOmega
 
-medium.com bypass Create PAC profile
+medium.com bypass using Auto Switch
+
+medium.com bypass using PAC profile Create PAC profile
 	function FindProxyForURL(url, host) {
 	if (/.*medium\.com$/.test(host)) 
 		return "PROXY 51.79.229.202:3128";
