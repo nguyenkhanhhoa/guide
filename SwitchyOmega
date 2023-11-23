@@ -2,7 +2,17 @@ https://chromewebstore.google.com/detail/proxy-switchyomega/padekgcemlokbadohgki
 https://github.com/FelisCatus/SwitchyOmega
 
 medium.com bypass using Auto Switch
-
++ Create Proxy Profile name Proxy
++ Create Auto Switch Profile
+ Create 2 rules
+	1/ 
+		Condition Type: URL regex
+		Condition Details: /*medium\.com$/
+		Profile: Proxy(above)
+	2/ 
+		Condition Type: Host wildcard
+		Condition Details: *
+		Profile: Direct
 medium.com bypass using PAC profile Create PAC profile
 	function FindProxyForURL(url, host) {
 	if (/.*medium\.com$/.test(host)) 
