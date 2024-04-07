@@ -11,7 +11,7 @@ dpkg-reconfigure locales
 #sudo apt install  php8.-cli php8.1-fpm -y \
 sudo apt install  php8.2-cli php-fpm -y \
 sudo apt install  php8.2-pgsql php8.2-gd php8.2-mbstring php8.2-xmlrpc php8.2-xml  php8.2-curl php8.2-zip php8.2-intl   php8.2-soap -y \
-nano /etc/php/8.2/fpm/pool.d/www.conf -> uncomment security.limit_extensions = php \
+nano /etc/php/8.2/fpm/pool.d/www.conf -> uncomment security.limit_extensions = .php \
 **/etc/php/8.1/**
 
 nano /etc/php/8.2/cli/php.ini \
