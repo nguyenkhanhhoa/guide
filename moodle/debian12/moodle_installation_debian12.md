@@ -14,7 +14,7 @@ sudo apt install  php8.2-pgsql php8.2-gd php8.2-mbstring php8.2-xmlrpc php8.2-xm
 nano /etc/php/8.2/fpm/pool.d/www.conf -> uncomment security.limit_extensions =
 **/etc/php/8.1/**
 
-nano /etc/php/8.2/cli/php.ini \
+nano /etc/php/8.2/fpm/php.ini \
 change \
 memory_limit = 512M \
 cgi.fix_pathinfo = 0 \
